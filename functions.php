@@ -59,10 +59,4 @@ class Functions
         return 1;            
     }
 }
-/*
-echo "werkt niet";
-$function = new Functions();
-print_r($function->getTaskList(1));
-echo "done";
-*/
 ?>
