@@ -2,10 +2,13 @@
 
 $functions = New Functions();
 
+$date = date();
+
 for($i=0;$i<7;$i++)
 {
-    echo "<div weight='50' height='50' border=solid>";
+    echo "<div>";
     echo "test ".$i;
+    echo $date;
     
     
     echo "</div>";
