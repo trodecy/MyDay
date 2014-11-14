@@ -2,7 +2,7 @@
 
 $functions = New Functions();
 
-$date = date();
+$date = date(D);
 
 for($i=0;$i<7;$i++)
 {
