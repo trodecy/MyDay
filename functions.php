@@ -25,7 +25,7 @@ class Functions
 
     function getTaskList($userid)
     {
-        $results = $this->db->query("SELECT * FROM Tasks where profileid = ".$userid." ORDER BY priority DESC");
+        $results = $this->db->query("SELECT * FROM Tasks where profileid = ".$userid." ORDER BY priority ASC");
         $tasks = mysqli_fetch_all($results);
         return $tasks;
     }
@@ -58,5 +58,21 @@ class Functions
         echo $query;
         return 1;            
     }
+
+    function updateTaskPriority( $taskid, $priority ) 
+    {
+        $query = "UPDATE Tasks SET priority = " . $priority . " WHERE id = " . $taskid . ""; 
+        
+        if ( $this->db->query( $query ) )
+            return 1;
+        else
+            return 0;
+    }
 }
+/*
+echo "werkt niet";
+$function = new Functions();
+print_r($function->getTaskList(1));
+echo "done";
+*/
 ?>

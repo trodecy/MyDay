@@ -1,3 +1,18 @@
+<script>
+  function UpdatePriority(parr)
+  {
+      jQuery.ajax({
+       type: "POST",
+       data: 'id='+parr,
+       url: "updatePriority.php",
+       cache: false,
+       success: function(response)
+       {
+         alert("Record successfully updated");
+       }
+     });
+ }
+</script>
 <!-- Content part -->
 <div class="content col-md-10">
 

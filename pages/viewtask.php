@@ -8,7 +8,7 @@
     $task_name  = $task_info[ 'name' ];
     $task_desc  = $task_info[ 'description' ];
     $task_steps = json_decode( $task_info[ 'steps' ] );
-    $task_cons  = $task_info[ 'consequenties' ];
+    $task_cons  = $task_info[ 'consequence' ];
 
 ?>
 
@@ -33,9 +33,9 @@
 
                 <ul class="list-group">
 
-                    <li class="list-group-item">Item</li>
-                    <li class="list-group-item">Item</li>
-                    <li class="list-group-item">Item</li>
+                    <?php foreach ( $task_steps as $step ) { ?>
+                        <li class="list-group-item"><?php echo $step; ?></li>
+                    <?php } ?>
 
                 </ul>
 
