@@ -25,6 +25,7 @@
 	-moz-transition: all @duration ease-in-out;
 	-o-transition: all @duration ease-in-out;
 	transition: all @duration ease-in-out;
+	-webkit-transform: translate3d( 0, 0, 0 );
 }
 
 // Style
@@ -61,6 +62,13 @@ body {
 		}
 	}
 
+	// Main container responsive fix
+	#main-container {
+
+		@media all and ( max-width: 992px ) {
+			margin-top: 64px;
+		}
+	}
 	// Main menu
 	#menu-wrapper {
 		padding: 0;
@@ -72,12 +80,41 @@ body {
 				// display: none;
 				position: fixed;
 				top: 0;
-				left: 0;
-				width: 18em;
+				left: -17em;
+				width: 17em;
 				height: 100%;
 				background: @c-light;
 				z-index: 999;
 				.animate();
+
+				&.open {
+					left: 0;
+				}
+			}
+
+			#toggle_mobile_menu {
+				display: none;
+				position: absolute;
+				width: 64px;
+				height: 64px;
+				text-align: center;
+				line-height: 64px;
+				color: #fff;
+				right: -64px;
+				font-size: 2em;
+				background: @c-light;
+				cursor: pointer;
+				top: 0;
+				.animate();
+
+				@media all and ( max-width: 992px ) {
+					display: block;
+				}
+
+				&:hover {
+					background: #fff;
+					color: @c-light;
+				}
 			}
 
 			ul {
@@ -107,6 +144,15 @@ body {
 		overflow: hidden;
 		padding: @gutter_sm @gutter;
 		background: @c-main;
+
+		@media all and ( max-width: 992px ) {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 998;
+			height: 64px;
+		}
 
 		#welcome {
 			float: right;

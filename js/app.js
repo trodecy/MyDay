@@ -27,7 +27,41 @@ jQuery( function() {
 			ui.placeholder.html( '<td colspan="' + cellCount + '"><a href="#">&nbsp;</a></td>' );
 		},
 		update					: function( event, ui ) {
-			console.log( 'update' );
+
+			var td 			= jQuery( '.sortableTable td' ),
+				new_order	= [],
+				json;
+
+			td.each( function() {
+
+				var _this 	= jQuery( this ),
+					id 		= _this.find( 'a' ).attr( 'data-id' ),
+					index	= _this.parent().index(),
+					push	= {};
+
+				push.index	= index;
+				push.id 	= id;
+
+				new_order.push( push );
+
+			});
+
+			jQuery.ajax({
+				type 		: 'POST',
+				url  		: 'updatePriority.php',
+				data 		: {
+					order: new_order
+				},
+				beforeSend	: function( e ) {
+					console.log( 'sending data ' + e );
+				},
+				success 	: function( e ) {
+					console.log( 'success ' + e );
+				},
+				error 		: function( e ) {
+					console.log( 'error ' + e );
+				}
+			});
 		}
 	}).disableSelection();
 
@@ -50,5 +84,13 @@ jQuery( function() {
 			task_form.append( '<input type="hidden" name="task_steps_array[]" value="' + value + '" />' );
 			amount_of_steps++;
 		}
+	});
+
+	// Responsive menu
+	var toggle_menu		= jQuery( '#toggle_mobile_menu' ),
+		main_menu		= jQuery( '#main-menu' );
+
+	toggle_menu.on( 'click', function() {
+		main_menu.toggleClass( 'open' );
 	});
 });

@@ -17,9 +17,9 @@
             </thead>
             <tbody>
                 <?php 
-                $tasks = $functions->getTaskList($usrid);
+                $tasks = $functions->getTaskList( $usrid );
                 $html = '';
-                foreach($tasks as $task)
+                foreach( $tasks as $task )
                 {
 
                     $task_id = $task[ 0 ];
@@ -28,12 +28,12 @@
                     $html .= '<tr>';
                         $html .= '<td>';
                             $html .= '<a data-id="' . $task_id . '" href="?page=viewtask&task_id=' . $task_id . '">';
+                                $pList[] = $task_id;
                                 $html .= $task_name;
                             $html .= '</a>';
                         $html .= '</td>';
                     $html .= '</tr>';
-                }
-                $html .= '<input type="button" id="button_id" value="Update" onClick="UpdatePriority('.$pList.');">';
+                };
                 print $html;
                 ?>
             </tbody>
