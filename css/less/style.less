@@ -1,0 +1,219 @@
+/*
+	Template:	MyDay Admin Panel	
+*/
+
+// Vars
+@c-main		: #2c3e50;
+@c-light	: lighten( @c-main, 5% );
+@gutter		: 30px;
+@gutter_sm	: 15px;
+
+// Mixins
+.clear() {
+	clear: both;
+	overflow: hidden;
+	float: none;
+}
+
+.reset() {
+	margin: 0;
+	padding: 0;
+}
+ 
+.animate( @duration: .2s ) {
+	-webkit-transition: all @duration ease-in-out;
+	-moz-transition: all @duration ease-in-out;
+	-o-transition: all @duration ease-in-out;
+	transition: all @duration ease-in-out;
+}
+
+// Style
+body {
+	background: #ecf0f1;
+	color: #222;
+	overflow-x: hidden;
+
+	// Login form
+	#login-form {
+		background: #fff;
+		overflow: hidden;
+		border-radius: 5px;
+		margin-top: @gutter;
+
+		h1 {
+			.reset();
+			padding: @gutter_sm @gutter;
+			background: @c-main;
+			font-size: 1.5em;
+			color: #fff;
+		}
+
+		form {
+			padding: @gutter;
+			overflow: hidden;
+		}
+
+		button {
+			float: right;
+		}
+		.checkbox {
+			float: left;
+		}
+	}
+
+	// Main menu
+	#menu-wrapper {
+		padding: 0;
+		background: @c-light;
+
+		#main-menu {
+
+			@media all and ( max-width: 992px ) {
+				// display: none;
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 18em;
+				height: 100%;
+				background: @c-light;
+				z-index: 999;
+				.animate();
+			}
+
+			ul {
+				.reset();
+
+				li {
+					list-style: none;
+
+					a {
+						display: block;
+						padding: @gutter_sm;
+						color: #fff;
+						.animate();
+
+						&:hover {
+							text-decoration: none;
+							background: rgba( 0, 0, 0, 0.1 );
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#top-bar {
+		color: #fff;
+		overflow: hidden;
+		padding: @gutter_sm @gutter;
+		background: @c-main;
+
+		#welcome {
+			float: right;
+
+			img {
+				height: 50px;
+				padding-right: @gutter_sm;
+			}	
+
+			button {
+				margin-left: @gutter_sm;
+				.animate();
+			}
+		}
+	}
+
+	.content {
+		padding: 0;
+		background: #ecf0f1;
+
+		#taskbar {
+			background: @c-light;
+			padding: @gutter_sm @gutter;
+			color: #fff;
+			width: 100%;
+			float: left;
+
+			.buttons {
+				float: right;
+			}
+		}
+
+		#main {
+			clear: both;
+			padding: @gutter;
+
+			h2 {
+				margin: 0;
+				background: @c-main;
+				color: #fff;
+				font-size: 1em;
+				padding: @gutter_sm;
+			}
+
+			h3 {
+				font-size: 1em;
+			}
+
+			.required {
+				color: #bc0000;
+			}
+
+			.must-have-class {
+				background: @c-light !important;
+			}
+
+			.info-block {
+				background: #fff;
+				padding: @gutter_sm;
+				margin: 0;
+				overflow: hidden;
+
+				p {
+					margin: 0;
+				}
+
+				ul {
+					margin: 0;
+				}
+			}
+
+			.sortableTable {
+				width: 100%;
+
+				td, th {
+					padding: @gutter_sm;
+					background: #fff;
+				}
+
+				td {
+
+					a {
+						color: #222;
+						display: block;
+						text-decoration: none;
+					}
+				}
+
+				th {
+					background: @c-main;
+					color: #fff;
+				}
+			}
+
+			.form {
+				background: #fff;
+				padding: @gutter_sm;
+				overflow: hidden;
+
+				button {
+					float: right;
+				}
+
+				#task_steps {
+					padding-left: @gutter_sm;
+				}
+			}
+		}
+	}
+}
