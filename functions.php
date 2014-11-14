@@ -68,6 +68,7 @@ class Functions
         else
             return 0;
     }
+    
 }
 /*
 echo "werkt niet";
