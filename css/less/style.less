@@ -125,7 +125,7 @@ body {
 
 					a {
 						display: block;
-						padding: @gutter;
+						padding: @gutter_sm;
 						color: #fff;
 						.animate();
 
@@ -142,7 +142,7 @@ body {
 	#top-bar {
 		color: #fff;
 		overflow: hidden;
-		padding: @gutter;
+		padding: @gutter_sm @gutter;
 		background: @c-main;
 
 		@media all and ( max-width: 992px ) {
@@ -175,7 +175,7 @@ body {
 
 		#taskbar {
 			background: @c-light;
-			padding: @gutter;
+			padding: @gutter_sm @gutter;
 			color: #fff;
 			width: 100%;
 			float: left;
@@ -194,7 +194,7 @@ body {
 				background: @c-main;
 				color: #fff;
 				font-size: 1em;
-				padding: @gutter;
+				padding: @gutter_sm;
 			}
 
 			h3 {
@@ -227,18 +227,15 @@ body {
 			.sortableTable {
 				width: 100%;
 
-				th {
-					padding: @gutter;
+				td, th {
+					padding: @gutter_sm;
 					background: #fff;
 				}
 
 				td {
-					background: #fff;
-					padding: 0;
 
 					a {
 						color: #222;
-						padding: @gutter;
 						display: block;
 						text-decoration: none;
 					}
@@ -252,7 +249,7 @@ body {
 
 			.form {
 				background: #fff;
-				padding: @gutter;
+				padding: @gutter_sm;
 				overflow: hidden;
 
 				button {
@@ -260,7 +257,7 @@ body {
 				}
 
 				#task_steps {
-					padding-left: @gutter;
+					padding-left: @gutter_sm;
 				}
 			}
 		}
