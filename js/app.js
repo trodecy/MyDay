@@ -24,7 +24,7 @@ jQuery( function() {
 				cellCount += colspan;
 			});
 
-			ui.placeholder.html( '<td style="padding: 30px" colspan="' + cellCount + '"><a href="#">&nbsp;</a></td>' );
+			ui.placeholder.html( '<td colspan="' + cellCount + '"><a href="#">&nbsp;</a></td>' );
 		},
 		update					: function( event, ui ) {
 
