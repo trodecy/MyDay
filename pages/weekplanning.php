@@ -5,7 +5,7 @@ $functions = New Functions();
 $dag = date(D);
 $date = date("d-m-Y");
 
-echo "<table>";
+echo "<table border='1' style='width:100%'>";
 echo "<tr>";
 echo "<td> maandag </td>";
 echo "<td> dinsdag </td>";
