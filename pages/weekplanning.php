@@ -38,7 +38,7 @@ for($i=$counter;$i<$end;$i++)
     //echo $wday;
     echo "</br>";
     $taken = $functions->getSingleTaskByDate($usrid, $wday);
-    foreach($taken as $task)
+    foreach($taken as $taak)
     {
         echo "<a href='?pages=viewtask&task_id=" . $taak['id'] . "'>" . $taak['name'] . "</a></br>";        
     }
