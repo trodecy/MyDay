@@ -37,11 +37,11 @@ for($i=$counter;$i<$end;$i++)
     $wday = date('Y-m-d', strtotime($i .' day', strtotime($curdate)));
     //echo $wday;
     echo "</br>";
-    $taken = $functions->getSingleTaskByDate($usrid, $wday);
-    foreach($taken as $taak)
-    {
+    $taak = $functions->getSingleTaskByDate($usrid, $wday);
+    //foreach($taken as $taak)
+    //{
         echo "<a href='?pages=viewtask&task_id=" . $taak['id'] . "'>" . $taak['name'] . "</a></br>";        
-    }
+    //}
     echo "</td>";
 }
 echo "</tr>";
