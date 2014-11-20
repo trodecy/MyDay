@@ -38,7 +38,7 @@ for($i=$counter;$i<$end;$i++)
     //echo $wday;
     echo "</br>";
     $taak = $functions->getSingleTaskByDate($usrid, $wday);
-    echo $taak['name'] . "</br>";
+    echo '<a href="?taskid=$taak["id"]">' . $taak['name'] . "</a></br>";
     echo "</td>";
 }
 echo "</tr>";
