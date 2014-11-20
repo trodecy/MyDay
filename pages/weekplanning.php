@@ -13,7 +13,7 @@ if ( $user ) {
 }
 
 $dag = date('N');
-$date = date("d-m-Y");
+$curdate = date("Y-m-d");
 ?>
 <table border="1" style="width:80%">
 <tr border="1">
@@ -34,11 +34,11 @@ echo $counter;
 echo $end;
 for($i=$counter;$i<$end;$i++)
 {
-    $curdate = $date;
     echo "<td>";
-    print_r(date('d-m-Y', strtotime($i .' day', strtotime($curdate))));
+    print_r(date('Y-m-d', strtotime($i .' day', strtotime($curdate))));
+    echo "</br>";
     $task = $functions->getSingleTaskByDate($usrid, $curdate);
-    //print_r($task);
+    print_r($task);
     echo "</td>";
 }
 echo "</tr>";
