@@ -37,8 +37,7 @@ for($i=$counter;$i<$end;$i++)
     $wday = date('Y-m-d', strtotime($i .' day', strtotime($curdate)));
     //echo $wday;
     echo "</br>";
-    $task = $functions->getSingleTaskByDate($usrid, $wday);
-    print_r($task);
+    print_r($functions->getSingleTaskByDate($usrid, $wday));
     echo "</td>";
 }
 echo "</tr>";
