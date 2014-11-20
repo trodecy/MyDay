@@ -69,6 +69,13 @@ class Functions
             return 0;
     }
     
+    function getSingleTaskByDate( $taskid, $date )
+    {
+        $result = $this->db->query( "SELECT * FROM Tasks WHERE id = " . $taskid . "AND WHERE date = " . $date );
+        $task = mysqli_fetch_assoc( $result );
+        return $task;
+    }
+    
 }
 /*
 echo "werkt niet";

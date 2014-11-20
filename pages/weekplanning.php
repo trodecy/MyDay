@@ -1,8 +1,18 @@
 <?php
+session_start();
 
-$functions = New Functions();
+$user = $_SESSION[ 'usrid' ];
+$page = $_GET[ 'page' ];
 
-$dag = date(D);
+if ( $user ) {
+    $usr    = $_SESSION[ 'usr' ];
+    $usrid  = $_SESSION[ 'usrid' ];
+
+    require_once( 'functions.php' );
+    $functions = new Functions;
+}
+
+$dag = date(N);
 $date = date("d-m-Y");
 ?>
 <table border="1" style="width:80%">
@@ -13,13 +23,19 @@ $date = date("d-m-Y");
 <td> donderdag </td>
 <td> vrijdag </td>
 <td> zaterdag </td>
+<td> zondag </td>
 </tr>
-<tr border="1">
+<tr>
     
 <?php
-for($i=0;$i<7;$i++)
+$counter = $dag - 1;
+$end = 7 - $dag;
+for($i=$counter;$i<$end;$i++)
 {
+    $curdate = $date;
     echo "<td>";
+    $task = $functions->getSingleTaskByDate($usrid, $curdate);
+    echo $task;
     //echo "test ".$i;
     //echo $date;
     echo $date;
