@@ -30,6 +30,8 @@ $date = date("d-m-Y");
 <?php
 $counter = $dag - 1;
 $end = 7 - $dag;
+echo $counter;
+echo $end;
 for($i=$counter;$i<$end;$i++)
 {
     $curdate = $date;
