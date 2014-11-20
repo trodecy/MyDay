@@ -7,19 +7,22 @@ $date = date("d-m-Y");
 
 echo "<table>";
 echo "<tr>";
-echo "<td> lala </td>";
-echo "<td> lala2 </td>";
+echo "<td> maandag </td>";
+echo "<td> dinsdag </td>";
+echo "<td> woensdag </td>";
+echo "<td> donderdag </td>";
+echo "<td> vrijdag </td>";
+echo "<td> zaterdag </td>";
 echo "</tr>";
 echo "<tr>";
-echo "<td> lala3 </td>";
-echo "</tr>";
 for($i=0;$i<7;$i++)
 {
-    echo "<div>";
+    echo "<td>";
     //echo "test ".$i;
     //echo $date;
-    echo $date+$i;
+    echo $date;
     
     
-    echo "</div>";
+    echo "</td>";
 }
+echo "</tr>";
