@@ -28,7 +28,7 @@ $date = date("d-m-Y");
 <tr>
     
 <?php
-$counter = $dag - 1;
+$counter = 1 - $dag;
 $end = 7 - $dag;
 echo $counter;
 echo $end;
