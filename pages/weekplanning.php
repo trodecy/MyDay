@@ -5,8 +5,8 @@ $functions = New Functions();
 $dag = date(D);
 $date = date("d-m-Y");
 ?>
-<table border="1" style="width:100%">
-<tr>
+<table border="1" style="width:80%">
+<tr border="1">
 <td> maandag </td>
 <td> dinsdag </td>
 <td> woensdag </td>
@@ -14,7 +14,7 @@ $date = date("d-m-Y");
 <td> vrijdag </td>
 <td> zaterdag </td>
 </tr>
-<tr>
+<tr border="1">
     
 <?php
 for($i=0;$i<7;$i++)
