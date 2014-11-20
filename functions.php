@@ -72,7 +72,7 @@ class Functions
     function getSingleTaskByDate( $taskid, $date )
     {
         //echo "SELECT * FROM Tasks WHERE profileid = " . $taskid . " AND date = '" . $date . "'" ;
-        $result = $this->db->query( "SELECT * FROM Tasks WHERE id = " . $taskid . " AND date = '" . $date . "'");
+        $result = $this->db->query( "SELECT * FROM Tasks WHERE profileid = " . $taskid . " AND date = '" . $date . "'");
         $task = mysqli_fetch_assoc( $result );
         return $task;
     }
