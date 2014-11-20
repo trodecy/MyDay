@@ -36,14 +36,9 @@ for($i=$counter;$i<$end;$i++)
 {
     $curdate = $date;
     echo "<td>";
-    echo date('Y-m-d', strtotime($$i .' day', strtotime($curdate)));
+    print_r(date('Y-m-d', strtotime($$i .' day', strtotime($curdate))));
     $task = $functions->getSingleTaskByDate($usrid, $curdate);
-    echo $task;
-    //echo "test ".$i;
-    //echo $date;
-    echo $date;
-    
-    
+    print_r($task);
     echo "</td>";
 }
 echo "</tr>";
