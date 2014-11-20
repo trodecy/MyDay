@@ -14,6 +14,7 @@ if ( $user ) {
 
 $dag = date(N);
 $date = date("d-m-Y");
+echo $dag;
 ?>
 <table border="1" style="width:80%">
 <tr border="1">
