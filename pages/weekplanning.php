@@ -29,13 +29,14 @@ $date = date("d-m-Y");
     
 <?php
 $counter = 1 - $dag;
-$end = 7 - $dag;
+$end = 8 - $dag;
 echo $counter;
 echo $end;
 for($i=$counter;$i<$end;$i++)
 {
     $curdate = $date;
     echo "<td>";
+    echo date('Y-m-d', strtotime($$i .' day', strtotime($curdate)));
     $task = $functions->getSingleTaskByDate($usrid, $curdate);
     echo $task;
     //echo "test ".$i;
