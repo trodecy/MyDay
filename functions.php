@@ -71,6 +71,7 @@ class Functions
     
     function getSingleTaskByDate( $taskid, $date )
     {
+        echo "SELECT * FROM Tasks WHERE id = " . $taskid . "AND WHERE date = " . $date ;
         $result = $this->db->query( "SELECT * FROM Tasks WHERE id = " . $taskid . "AND WHERE date = " . $date );
         $task = mysqli_fetch_assoc( $result );
         return $task;

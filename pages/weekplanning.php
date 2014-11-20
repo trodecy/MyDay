@@ -30,8 +30,7 @@ $curdate = date("Y-m-d");
 <?php
 $counter = 1 - $dag;
 $end = 8 - $dag;
-echo $counter;
-echo $end;
+
 for($i=$counter;$i<$end;$i++)
 {
     echo "<td>";
