@@ -12,9 +12,8 @@ if ( $user ) {
     $functions = new Functions;
 }
 
-$dag = date(N);
+$dag = date('N');
 $date = date("d-m-Y");
-echo $dag;
 ?>
 <table border="1" style="width:80%">
 <tr border="1">
@@ -29,7 +28,6 @@ echo $dag;
 <tr>
     
 <?php
-echo $dag;
 $counter = 1 - $dag;
 $end = 7 - $dag;
 echo $counter;
