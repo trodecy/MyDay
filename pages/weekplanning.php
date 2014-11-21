@@ -44,4 +44,7 @@ for($i=$counter;$i<$end;$i++)
     //}
     echo "</td>";
 }
-echo "</tr>";
+
+?>
+
+</tr></table>
