@@ -26,7 +26,7 @@
 
     <main id="main">
 
-        <table class="table table-bordered sortableTable styled-table">
+        <table class="table table-striped sortableTable styled-table">
             <thead>
                 <tr><th>Taak</th></tr>
             </thead>
