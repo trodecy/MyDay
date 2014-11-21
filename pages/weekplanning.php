@@ -34,13 +34,13 @@ $curdate = date("Y-m-d");
 
                 <tr>
             
-                    <th> maandag </th>
-                    <th> dinsdag </th>
-                    <th> woensdag </th>
-                    <th> donderdag </th>
-                    <th> vrijdag </th>
-                    <th> zaterdag </th>
-                    <th> zondag </th>
+                    <th> Maandag </th>
+                    <th> Dinsdag </th>
+                    <th> Woensdag </th>
+                    <th> Donderdag </th>
+                    <th> Vrijdag </th>
+                    <th> Zaterdag </th>
+                    <th> Zondag </th>
                 
                 </tr>
 
