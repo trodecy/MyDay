@@ -51,6 +51,11 @@
                                 Taken
                             </a>
                         </li>
+                        <li>
+                            <a href="?page=weekplanning">
+                                Weekplanning
+                            </a>
+                        </li>
                     </ul>
 
                 </nav>
