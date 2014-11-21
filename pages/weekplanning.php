@@ -28,9 +28,9 @@ $curdate = date("Y-m-d");
 
     <main id="main">
 
-        <table border="1" style="width:80%">
+        <table class="table table-bordered">
         
-            <tr border="1">
+            <tr>
         
                 <td> maandag </td>
                 <td> dinsdag </td>
@@ -64,7 +64,7 @@ $curdate = date("Y-m-d");
                 ?>
 
             </tr>
-            
+
         </table>
 
     </main>
