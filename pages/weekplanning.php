@@ -28,7 +28,7 @@ $curdate = date("Y-m-d");
 
     <main id="main">
 
-        <table class="table table-striped styled-table">
+        <table class="table styled-table">
         
             <thead>
 
