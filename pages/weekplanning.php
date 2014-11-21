@@ -28,7 +28,7 @@ $curdate = date("Y-m-d");
 
     <main id="main">
 
-        <table class="table table-bordered">
+        <table class="table table-bordered styled-table">
         
             <thead>
 
