@@ -30,18 +30,22 @@ $curdate = date("Y-m-d");
 
         <table class="table table-bordered">
         
-            <tr>
-        
-                <td> maandag </td>
-                <td> dinsdag </td>
-                <td> woensdag </td>
-                <td> donderdag </td>
-                <td> vrijdag </td>
-                <td> zaterdag </td>
-                <td> zondag </td>
+            <thead>
+
+                <tr>
             
-            </tr>
-        
+                    <th> maandag </th>
+                    <th> dinsdag </th>
+                    <th> woensdag </th>
+                    <th> donderdag </th>
+                    <th> vrijdag </th>
+                    <th> zaterdag </th>
+                    <th> zondag </th>
+                
+                </tr>
+
+            </thead>
+            
             <tr>
         
                 <?php
