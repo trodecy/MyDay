@@ -48,7 +48,7 @@
 
             <div class="form-group">
                 <label for="task_color">Kleur</label>
-                <select id="task_color" name="task_color">
+                <select class="form-control" id="task_color" name="task_color">
                     <?php
                         $colors = $functions->getAllColors();
 
@@ -61,7 +61,9 @@
 
             <div class="form-group">
                 <label for="task_consequence">Lamp</label>
-                <textarea class="form-control" name="task_consequence" id="task_consequence" rows="4" placeholder="Consequentie(s) als de taak niet uitgevoerd wordt"></textarea>
+                <select id="task_color" name="task_color">
+                    <option value="">nvt</option>
+                </select>    
             </div>
             
             <button type="submit" class="btn btn-success">Taak invoeren</button>
