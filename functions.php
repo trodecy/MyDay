@@ -76,6 +76,21 @@ class Functions
         $task = mysqli_fetch_assoc( $result );
         return $task;
     }
+
+    function getAllColors() {
+        $colors = array(
+            'white'         => 'Wit',
+            'light-blue'    => 'Lichtblauw',   
+            'blue'          => 'Blauw',
+            'purple'        => 'Paars',
+            'pink'          => 'Roze', 
+            'red'           => 'Rood',
+            'orange'        => 'Oranje',
+            'yellow'        => 'Geel',
+            'cyan'          => 'Cyaan',
+            'green'         => 'Groen'
+        );
+    }
     
 }
 /*

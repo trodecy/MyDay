@@ -45,6 +45,24 @@
 
                 </ul>
             </div>
+
+            <div class="form-group">
+                <label for="task_color">Kleur</label>
+                <select id="task_color" name="task_color">
+                    <?php
+                        $colors = $functions->getAllColors();
+
+                        foreach ( $colors as $color_id => $color_name ) {
+                            echo '<option value="' . $color_name . '">' . $color_name . '</option>';
+                        } 
+                    ?>
+                </select>   
+            </div>
+
+            <div class="form-group">
+                <label for="task_consequence">Lamp</label>
+                <textarea class="form-control" name="task_consequence" id="task_consequence" rows="4" placeholder="Consequentie(s) als de taak niet uitgevoerd wordt"></textarea>
+            </div>
             
             <button type="submit" class="btn btn-success">Taak invoeren</button>
 
