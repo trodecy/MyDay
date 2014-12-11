@@ -90,6 +90,8 @@ class Functions
             'cyan'          => 'Cyaan',
             'green'         => 'Groen'
         );
+
+        return $colors;
     }
     
 }
