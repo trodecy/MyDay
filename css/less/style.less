@@ -134,7 +134,7 @@ body {
 
 						&:hover {
 							text-decoration: none;
-							background: rgba( 0, 0, 0, 0.1 );
+							background: @c-contrast;
 						}
 					}
 				}
@@ -178,7 +178,7 @@ body {
 
 		#taskbar {
 			// background: @c-light;
-			padding: @gutter @gutter 0;
+			padding: @gutter_sm @gutter;
 			color: #fff;
 			width: 100%;
 			float: left;
@@ -190,7 +190,7 @@ body {
 
 		#main {
 			clear: both;
-			padding: @gutter;
+			padding: 0 @gutter @gutter;
 
 			h2 {
 				margin: 0;
