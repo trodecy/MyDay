@@ -47,7 +47,7 @@ class Functions
 
     function deleteTask($taskid)
     {
-        $this->db->query("DELETE FROM tasks WHERE id =".$taskid);
+        $this->db->query("DELETE FROM Tasks WHERE id =".$taskid);
         return 1;
     }
     
