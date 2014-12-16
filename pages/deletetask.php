@@ -2,7 +2,11 @@
 
     $id = $_GET[ 'id' ];
 
-    $functions->deleteTask( $id );
 
-    header( 'Location: ?page=taken' );
-    die();
+    if ( $functions->deleteTask( $id ) )
+        echo 'yay';
+    else
+        echo 'nay!';
+
+    // header( 'Location: ?page=taken' );
+    // die();
