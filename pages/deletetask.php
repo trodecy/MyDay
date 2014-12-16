@@ -4,5 +4,5 @@
 
     $functions->deleteTask( $id );
 
-    header( '?page=taken' );
+    header( 'Location: ?page=taken' );
     die();
