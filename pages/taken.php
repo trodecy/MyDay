@@ -2,6 +2,7 @@
 <div class="content col-md-10">
 
     <div id="taskbar">
+        <h1> Takenoverzicht </h1>
         <div class="btn-group buttons">
             <a href="?page=addtask">
                 <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
