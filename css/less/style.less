@@ -4,6 +4,7 @@
 
 // Vars
 @c-bg 		: #eeeff2;
+@c-light-bg : #f7f8fa;
 @c-main		: #33373c;
 @c-light	: #41474f;
 @c-contrast	: #dc6161;
@@ -246,7 +247,8 @@ body {
 				td, th {
 					padding: @gutter_sm;
 					background: #fff;
-					border: 1px solid @c-border;
+					border-left: 1px solid @c-border;
+					border-right: 1px solid @c-border;
 				}
 
 				td {
@@ -256,6 +258,10 @@ body {
 						display: block;
 						text-decoration: none;
 					}
+
+					&:nth-child( odd ) {
+						background: @c-light-bg;
+					} 
 				}
 
 				th {
