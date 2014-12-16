@@ -6,10 +6,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>MyDay Admin Panel</title>
 
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery-ui.css" rel="stylesheet">
 
     <link href="css/style.css" rel="stylesheet">
+
 
   </head>
   <body>
