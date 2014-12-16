@@ -15,15 +15,14 @@ if ( $user ) {
 $dag = date('N');
 $curdate = date("Y-m-d");
 
-$current_dayname = date("l");
              
-echo $date = date("Y-m-d",strtotime('monday this week')).' To '.date("Y-m-d",strtotime("sunday this week"));
+$week_string = date("d-m",strtotime('monday this week')).' tot '.date("d-m",strtotime("sunday this week"));
 ?>
 
 <div class="content col-md-10">
 
     <div id="taskbar">
-        <h1> Weekplanning </h1>
+        <h1> Weekplanning <?php echo $week_string; ?> </h1>
         <div class="btn-group buttons">
             <a href="?page=addtask">
                 <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
