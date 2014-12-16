@@ -1,6 +1,10 @@
 <!-- Content part -->
 <div class="content col-md-10">
 
+    <div id="taskbar">
+        <h1> Nieuwe taak invoeren </h1>
+    </div>
+
     <main id="main">
 
         <h2> Taak invoeren </h2>
