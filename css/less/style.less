@@ -6,7 +6,8 @@
 @c-main		: #33373c;
 @c-light	: #41474f;
 @c-contrast	: #dc6161;
-@border 	: #ccc;
+@c-border 	: #ccc;
+@c-d-border : #2d3135;
 
 @gutter		: 40px;
 @gutter_sm	: ( @gutter / 2 );
@@ -138,6 +139,7 @@ body {
 						padding: @gutter_sm;
 						color: #fff;
 						.animate();
+						border-top: 1px solid @c-d-border;
 
 						&:hover {
 							text-decoration: none;
@@ -242,7 +244,7 @@ body {
 				td, th {
 					padding: @gutter_sm;
 					background: #fff;
-					border: 1px solid @border;
+					border: 1px solid @c-border;
 				}
 
 				td {
