@@ -13,15 +13,17 @@ if ( $user ) {
     $functions = new Functions;
 }
 
-$name = $_POST['task_name'];
-$duration = $_POST['task_duration'];
-$date = $_POST['task_date'];
-$description = $_POST['task_description'];
-$consequence = $_POST['task_consequence'];
-$steps = $_POST['task_steps_array'];
+$name 			= $_POST[ 'task_name' ];
+$duration 		= $_POST[ 'task_duration' ];
+$date 			= $_POST[ 'task_date' ];
+$description 	= $_POST[ 'task_description' ];
+$consequence 	= $_POST[ 'task_consequence' ];
+$steps 			= $_POST[ 'task_steps_array' ];
+$color 			= $_POST[ 'task_color' ];
+$lamp			= $_POST[ 'task_lamp' ];
 
-$jsteps = json_encode($steps);
+$jsteps 		= json_encode($steps);
 
-$functions->insertTask($name, $description, $usrid, $duration, $date, $consequence, $jsteps);
+$functions->insertTask( $name, $description, $usrid, $duration, $date, $consequence, $jsteps, $color, $lamp );
 
 header("Location: index.php?page=taken");

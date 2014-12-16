@@ -37,9 +37,9 @@ class Functions
         return $task;
     }
 
-    function insertTask($taskname, $taskdescription, $userid, $time, $date, $consequence, $steps)
+    function insertTask($taskname, $taskdescription, $userid, $time, $date, $consequence, $steps, $color, $light)
     {
-        $query = "INSERT INTO Tasks(name,description,profileid,time,date,consequence,steps) VALUES ('".$taskname."','".$taskdescription."', '".$userid."', '".$time."', '".$date."','".$consequence."','".$steps."')";
+        $query = "INSERT INTO Tasks(name,description,profileid,time,date,consequence,steps,color,light) VALUES ('".$taskname."','".$taskdescription."', '".$userid."', '".$time."', '".$date."','".$consequence."','".$steps."','".$color."','".$light."')";
         echo $query;
         $this->db->query($query);    
         return 1;
