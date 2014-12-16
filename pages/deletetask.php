@@ -3,10 +3,7 @@
     $id = $_GET[ 'id' ];
 
 
-    if ( $functions->deleteTask( $id ) )
-        echo 'yay';
-    else
-        echo 'nay!';
+    $functions->deleteTask( $id );
 
-    // header( 'Location: ?page=taken' );
-    // die();
+    header( 'Location: ?page=taken' );
+    die();
