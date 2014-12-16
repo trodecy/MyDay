@@ -44,7 +44,7 @@
                     </div>
 
                     <div id="branding">
-                    MyDay
+                        <img src="img/myday_logo_wh_sm.png" alt="MyDay" />
                     </div>
 
                     <ul>
