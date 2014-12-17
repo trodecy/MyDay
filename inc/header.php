@@ -27,7 +27,7 @@
         <!-- Right -->
         <div id="welcome">
             <img src="http://placekitten.com/g/300/300" class="img-circle hidden-xs hidden-sm" alt="placeholder" />
-            Welkom, <span class="user"><?php echo $usr; ?></span>
+            <span class="user">Welkom, <?php echo $usr; ?></span>
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-cog"></span></button>
         </div>
 
