@@ -178,15 +178,16 @@ body {
 		color: #fff;
 		overflow: hidden;
 		padding: @gutter_sm;
-		background: @c-main-2;
-		border-bottom: 1px solid @c-d-border;	
+		background: #fff;
+		border-bottom: 1px solid @c-border;	
+		position: relative;
+		z-index: 999;
 
 		@media all and ( max-width: 992px ) {
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
-			z-index: 998;
 			height: 64px;
 		}
 
