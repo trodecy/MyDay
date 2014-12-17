@@ -12,7 +12,7 @@
 
 @gutter		: 30px;
 @gutter_sm	: ( @gutter / 2 );
-@gutter_xsm	: ( @gutter_sm / 2 );
+@gutter_xsm	: ( @gutter / 3 );
 
 // Mixins
 .clear() {
@@ -303,7 +303,7 @@ body {
 				margin-bottom: 0;
 
 				td, th {
-					padding: @gutter_sm;
+					padding: @gutter_xsm @gutter_sm;
 					background: #fff;
 				}
 
