@@ -93,6 +93,6 @@ jQuery( function() {
 
 	toggle_menu.on( 'click', function() {
 		main_menu.toggleClass( 'open' );
-		toggle_menu_sp.toggleClass( 'glyphicon-th-large' ).toggleClass( 'glyphicon-chevron-left' );
+		toggle_menu_sp.toggleClass( 'fa-navicon' ).toggleClass( 'fa-chevron-left' );
 	});
 });

@@ -7,6 +7,7 @@
     <title>MyDay Admin Panel</title>
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/jquery-ui.css" rel="stylesheet">
@@ -46,7 +47,7 @@
 
                     <!-- Responsive menu -->
                     <div id="toggle_mobile_menu">
-                        <span id="menu_icon" class="glyphicon glyphicon-th-large"></span>
+                        <span id="menu_icon" class="fa fa-navicon"></span>
                     </div>
 
                     <ul>
