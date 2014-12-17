@@ -92,6 +92,6 @@ jQuery( function() {
 
 	toggle_menu.on( 'click', function() {
 		main_menu.toggleClass( 'open' );
-		toggle_menu.toggleClass( 'glyphicon-chevron-left' ).toggleClass( 'glyphicon-th-large' );
+		toggle_menu.toggleClass( 'glyphicon-th-large' ).toggleClass( 'glyphicon-chevron-left' );
 	});
 });
