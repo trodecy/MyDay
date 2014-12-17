@@ -5,6 +5,7 @@
 // Vars
 @c-bg 		: #f6f6f6;
 @c-main		: #166c65;
+@c-d-main	: darken( @c-main, 10% );
 @c-border 	: #ccc;
 @c-txt 		: #999;
 @c-txt-light: #fafafa;
@@ -132,6 +133,8 @@ body {
 				cursor: pointer;
 				background: @c-main;
 				top: 0;
+				border-left: 1px solid @c-d-main;
+				border-right: 1px solid @c-d-main;
 				.animate();
 
 				@media all and ( max-width: 992px ) {
