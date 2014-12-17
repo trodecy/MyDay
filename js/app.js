@@ -88,10 +88,11 @@ jQuery( function() {
 
 	// Responsive menu
 	var toggle_menu		= jQuery( '#toggle_mobile_menu' ),
+		toggle_menu_sp 	= toggle_menu.find( 'span' ),
 		main_menu		= jQuery( '#main-menu' );
 
 	toggle_menu.on( 'click', function() {
 		main_menu.toggleClass( 'open' );
-		toggle_menu.toggleClass( 'glyphicon-th-large' ).toggleClass( 'glyphicon-chevron-left' );
+		toggle_menu_sp.toggleClass( 'glyphicon-th-large' ).toggleClass( 'glyphicon-chevron-left' );
 	});
 });
