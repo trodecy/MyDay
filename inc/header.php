@@ -20,8 +20,14 @@
     <div id="top-bar">
 
         <div id="welcome">
+            <!-- Left -->
+            <div id="branding">
+                <img src="img/myday_logo_wh_sm.png" alt="MyDay" />
+            </div>
+
+            <!-- Right -->
             <img src="http://placekitten.com/g/300/300" class="img-circle hidden-xs hidden-sm" alt="placeholder" />
-            Welkom, <span class="user"><?php echo $usr ?></span>
+            Welkom, <span class="user"><?php echo $usr; ?></span>
             <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-cog"></span></button>
         </div>
 
@@ -41,10 +47,6 @@
                     <!-- Responsive menu -->
                     <div id="toggle_mobile_menu">
                         <span id="menu_icon" class="glyphicon glyphicon-th-large"></span>
-                    </div>
-
-                    <div id="branding">
-                        <img src="img/myday_logo_wh_sm.png" alt="MyDay" />
                     </div>
 
                     <ul>
