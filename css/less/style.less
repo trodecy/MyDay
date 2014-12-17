@@ -13,6 +13,7 @@
 @c-d-border : #2d3135;
 @c-menu-txt : #88939d;
 @c-txt 		: #999;
+@c-txt-light: #fafafa;
 
 @gutter		: 40px;
 @gutter_sm	: ( @gutter / 2 );
@@ -151,9 +152,9 @@ body {
 					a {
 						display: block;
 						padding: @gutter_sm;
-						color: @c-menu-txt;
+						color: @c-txt-light;
 						.animate();
-						border-bottom: 2px solid @c-d-border;
+						border-bottom: 1px solid rgba( 0, 0, 0, 0.2 );
 
 						&:hover {
 							text-decoration: none;
