@@ -132,7 +132,6 @@ body {
 				cursor: pointer;
 				background: #fff;
 				top: 0;
-				border: 1px solid @c-border;
 				.animate();
 
 				@media all and ( max-width: 992px ) {
@@ -188,6 +187,10 @@ body {
 
 		#branding {
 			float: left;
+
+			@media all and ( max-width: 992px ) {
+				display: none;
+			}
 
 			img {
 				width: auto;
