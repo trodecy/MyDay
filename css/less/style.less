@@ -99,7 +99,6 @@ body {
 
 		@media all and ( max-width: 992px ) {
 			position: relative;
-			border-right: 1px solid @c-d-main;
 		}
 
 		#main-menu {
@@ -114,6 +113,8 @@ body {
 				background: @c-main;
 				z-index: 999;
 				.animate();
+				border-right: 1px solid @c-d-main;
+				
 
 				&.open {
 					left: 0;
