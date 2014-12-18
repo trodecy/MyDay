@@ -5,13 +5,13 @@
         <h1> Takenoverzicht </h1>
     </div>
 
+    <div class="btn-group buttons">
+        <a href="?page=addtask">
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+        </a>
+    </div>
+    
     <main id="main">
-
-        <div class="btn-group buttons">
-            <a href="?page=addtask">
-                <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
-            </a>
-        </div>
 
         <table class="table sortableTable styled-table">
             <thead>
