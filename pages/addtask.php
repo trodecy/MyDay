@@ -59,7 +59,11 @@
             <div class="form-group">
                 <label for="task_consequence">Lamp</label>
                 <select class="form-control" id="task_lamp" name="task_lamp">
-                    <option value="4">nvt</option>
+                    <option value="1">Lamp 1</option>
+                    <option value="2">Lamp 2</option>
+                    <option value="3">Lamp 3</option>
+                    <option value="4">Lamp 4</option>
+                    <option value="5">Lamp 5</option>
                 </select>    
             </div>
             
