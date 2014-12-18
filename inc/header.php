@@ -20,16 +20,20 @@
 
     <div id="top-bar">
 
-        <!-- Left -->
-        <div id="branding">
-            <img src="img/myday_logo_wh_sm.png" alt="MyDay" />
-        </div>
+        <div class="content-container">
 
-        <!-- Right -->
-        <div id="welcome">
-            <img src="http://placekitten.com/g/300/300" class="img-circle hidden-xs hidden-sm" alt="placeholder" />
-            <span class="user">Welkom, <?php echo $usr; ?></span>
-            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-cog"></span></button>
+            <!-- Left -->
+            <div id="branding">
+                <img src="img/myday_logo_wh_sm.png" alt="MyDay" />
+            </div>
+
+            <!-- Right -->
+            <div id="welcome">
+                <img src="http://placekitten.com/g/300/300" class="img-circle hidden-xs hidden-sm" alt="placeholder" />
+                <span class="user">Welkom, <?php echo $usr; ?></span>
+                <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-cog"></span></button>
+            </div>
+
         </div>
 
     </div>

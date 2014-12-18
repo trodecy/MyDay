@@ -15,6 +15,8 @@
 @gutter_sm	: ( @gutter / 2 );
 @gutter_xsm	: ( @gutter / 3 );
 
+@max-width 	: ( 960px + ( @gutter_sm * 2 ) );
+
 // Mixins
 .clear() {
 	clear: both;
@@ -79,6 +81,12 @@ body {
 		.checkbox {
 			float: left;
 		}
+	}
+
+	.content-container {
+		width: 100%;
+		max-width: @max-width;
+		margin: 0 auto;
 	}
 
 	// Main container responsive fix
