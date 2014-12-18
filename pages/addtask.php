@@ -50,7 +50,7 @@
                         $colors = $functions->getAllColors();
 
                         foreach ( $colors as $color_id => $color_name ) {
-                            echo '<option value="' . $color_name . '">' . $color_name . '</option>';
+                            echo '<option value="' . $color_id . '">' . $color_name . '</option>';
                         } 
                     ?>
                 </select>   
