@@ -100,11 +100,7 @@ body {
 	#menu-wrapper {
 		padding: 0;
 		background: @c-main;
-		// position: fixed;
-		// left: 0;
-		// top: 74px;
-		// bottom: 0;
-		// box-shadow: -5px 0 5px rgba( 0, 0, 0, 0.1 ) inset;
+		margin-top: ( 74px + @gutter_sm );
 
 		@media all and ( max-width: 992px ) {
 			position: absolute;
@@ -235,7 +231,7 @@ body {
 	.content {
 		padding: 0;
 		// margin-left: 16.66666667%;
-		margin-top: ( 74px + @gutter_sm );
+		margin-top: 74px;
 
 		@media all and ( max-width: 992px ) {
 			margin-left: 0;
