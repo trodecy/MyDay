@@ -47,7 +47,7 @@
             <div class="row">
 
                 <!-- Menu part -->
-                <div id="menu-wrapper" class="col-md-3">
+                <div id="menu-wrapper" class="col-md-2">
                     
                     <nav id="main-menu">
 
