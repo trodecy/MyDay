@@ -97,7 +97,9 @@ body {
 	#menu-wrapper {
 		padding: 0;
 		background: @c-main;
-		margin-top: ( 74px + @gutter_sm );
+		position: fixed;
+		top: 74px;
+		bottom: 0;
 
 		@media all and ( max-width: 992px ) {
 			position: absolute;
