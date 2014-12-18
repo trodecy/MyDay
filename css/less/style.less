@@ -5,7 +5,7 @@
 // Vars
 @c-bg 		: #f2f4f8;
 @c-main		: #12131a;
-@c-d-main	: darken( @c-main, 10% );
+@c-contrast : #1aae88;
 @c-border 	: #ccc;
 @c-txt 		: #999;
 @c-txt-dark	: #333;
@@ -158,15 +158,16 @@ body {
 					a {
 						display: block;
 						padding: @gutter_sm;
-						color: @c-txt-light;
+						color: #8287a9;
 						.animate();
 						border-bottom: 1px solid rgba( 0, 0, 0, 0.2 );
 						border-top: 1px solid rgba( 255, 255, 255, 0.2 );
 
 						&:hover {
 							text-decoration: none;
-							background: rgba( 255, 255, 255, 0.1 );
+							background: @c-contrast;
 							color: #fff;
+							font-weight: 700;
 						}
 					}
 				}
