@@ -3,14 +3,15 @@
 
     <div id="taskbar">
         <h1> Takenoverzicht </h1>
+    </div>
+
+    <main id="main">
+
         <div class="btn-group buttons">
             <a href="?page=addtask">
                 <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
             </a>
         </div>
-    </div>
-
-    <main id="main">
 
         <table class="table sortableTable styled-table">
             <thead>
