@@ -66,7 +66,7 @@
             <div class="form-group">
                 <label for="task_consequence">Lamp</label>
                 <select class="form-control" id="task_color" name="task_color">
-                    <option value="">nvt</option>
+                    <option value="1">nvt</option>
                 </select>    
             </div>
             
