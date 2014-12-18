@@ -14,7 +14,6 @@ if ( $user ) {
 }
 
 $name 			= $_POST[ 'task_name' ];
-$duration 		= $_POST[ 'task_duration' ];
 $date 			= $_POST[ 'task_date' ];
 $description 	= $_POST[ 'task_description' ];
 $consequence 	= $_POST[ 'task_consequence' ];
@@ -24,6 +23,6 @@ $lamp			= $_POST[ 'task_lamp' ];
 
 $jsteps 		= json_encode($steps);
 
-$functions->insertTask( $name, $description, $usrid, $duration, $date, $consequence, $jsteps, $color, $lamp );
+$functions->insertTask( $name, $description, $usrid, $date, $consequence, $jsteps, $color, $lamp );
 
 header("Location: index.php?page=taken");
