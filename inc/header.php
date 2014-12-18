@@ -59,17 +59,17 @@
                         <ul>
                             <li>
                                 <a href="?page=index">
-                                    Home
+                                    <span class="fa fa-home"></span> Home
                                 </a>
                             </li>
                             <li>
                                 <a href="?page=taken">
-                                    Taken
+                                    <span class="fa fa-tasks"></span> Taken
                                 </a>
                             </li>
                             <li>
                                 <a href="?page=weekplanning">
-                                    Weekplanning
+                                    <span class="fa fa-calendar"></span> Weekplanning
                                 </a>
                             </li>
                         </ul>
