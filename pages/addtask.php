@@ -17,11 +17,6 @@
             </div>
 
             <div class="form-group">
-                <label for="task_duration">Duur van de taak</label>
-                <input type="number" class="form-control" name="task_duration" id="task_duration" placeholder="Hoeveel tijd neemt de taak in beslag? (in minuten)">
-            </div>
-
-            <div class="form-group">
                 <label for="task_date">Datum</label>
                 <input type="date" class="form-control" name="task_date" id="task_date" placeholder="De taak is op welke dag?">
             </div>
