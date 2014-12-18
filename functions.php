@@ -39,7 +39,18 @@ class Functions
 
     function insertTask( $taskname, $taskdescription, $userid, $date, $consequence, $steps, $color, $light )
     {
-        $query = "INSERT INTO Tasks(name, description, profileid, date, checkmark, priority, steps, consequence, color, lights ) 
+        $query = "INSERT INTO Tasks(
+                    name, 
+                    description, 
+                    profileid, 
+                    date, 
+                    checkmark, 
+                    priority, 
+                    steps, 
+                    consequence, 
+                    color, 
+                    lights )
+                     
                     VALUES ('".$taskname."',
                             '".$taskdescription."', 
                             '".$userid."', 

@@ -25,4 +25,7 @@ $jsteps 		= json_encode($steps);
 
 $functions->insertTask( $name, $description, $usrid, $date, $consequence, $jsteps, $color, $lamp );
 
-header("Location: index.php?page=taken");
+echo 'color: ' . $color;
+echo 'lamp: ' . $lamp;
+
+// header("Location: index.php?page=taken");
