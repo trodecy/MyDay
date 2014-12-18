@@ -19,7 +19,7 @@ $curdate = date("Y-m-d");
 $week_string = date("d-m",strtotime('monday this week')).' tot '.date("d-m",strtotime("sunday this week"));
 ?>
 
-<div class="content col-md-10">
+<div class="content col-md-9">
 
     <div id="taskbar">
         <h1> Weekplanning <?php echo $week_string; ?> </h1>

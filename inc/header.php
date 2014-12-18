@@ -42,12 +42,12 @@
     <div id="main-container" class="page container-fluid">
 
         <div class="content-container">
-        
+
             <!-- Full page row -->
             <div class="row">
 
                 <!-- Menu part -->
-                <div id="menu-wrapper" class="col-md-2">
+                <div id="menu-wrapper" class="col-md-3">
                     
                     <nav id="main-menu">
 

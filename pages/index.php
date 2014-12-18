@@ -1,5 +1,5 @@
 <!-- Content part -->
-<div class="content col-md-10">
+<div class="content col-md-9">
 
 	<div id="taskbar">
         <h1> Index </h1>

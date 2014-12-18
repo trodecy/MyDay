@@ -65,7 +65,7 @@ else
             </div>
 
             <!-- Content part -->
-            <div class="content col-md-10">
+            <div class="content col-md-9">
 
                 <main id="main">
 
