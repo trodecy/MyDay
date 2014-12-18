@@ -21,7 +21,7 @@
     
     <div class="btn-group buttons">
         <a href="?page=deletetask&id=<?php echo $task_id; ?>">
-            <button type="button" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+            <button type="button" class="btn btn-danger"><span class="fa fa-trash"></span></button>
         </a>
     </div>
 
