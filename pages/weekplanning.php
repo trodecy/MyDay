@@ -23,11 +23,12 @@ $week_string = date("d-m",strtotime('monday this week')).' tot '.date("d-m",strt
 
     <div id="taskbar">
         <h1> Weekplanning <?php echo $week_string; ?> </h1>
-        <div class="btn-group buttons">
-            <a href="?page=addtask">
-                <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
-            </a>
-        </div>
+    </div>
+
+    <div class="btn-group buttons">
+        <a href="?page=addtask">
+            <button type="button" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span></button>
+        </a>
     </div>
 
     <main id="main">
