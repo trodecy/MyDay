@@ -7,8 +7,6 @@
 
     <main id="main">
 
-        <h2> Taak invoeren </h2>
-
         <form id="task_form" class="form" role="form" method="POST" action="taskhandling.php">
 
             <div class="form-group">
