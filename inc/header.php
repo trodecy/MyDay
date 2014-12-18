@@ -41,37 +41,39 @@
     <!-- Page wrapper -->
     <div id="main-container" class="page container-fluid">
 
-        <!-- Full page row -->
-        <div class="row">
+        <div class="content-container">
+        
+            <!-- Full page row -->
+            <div class="row">
 
-            <!-- Menu part -->
-            <div id="menu-wrapper" class="col-md-2">
-                
-                <nav id="main-menu">
+                <!-- Menu part -->
+                <div id="menu-wrapper" class="col-md-2">
+                    
+                    <nav id="main-menu">
 
-                    <!-- Responsive menu -->
-                    <div id="toggle_mobile_menu">
-                        <span id="menu_icon" class="fa fa-navicon"></span>
-                    </div>
+                        <!-- Responsive menu -->
+                        <div id="toggle_mobile_menu">
+                            <span id="menu_icon" class="fa fa-navicon"></span>
+                        </div>
 
-                    <ul>
-                        <li>
-                            <a href="?page=index">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="?page=taken">
-                                Taken
-                            </a>
-                        </li>
-                        <li>
-                            <a href="?page=weekplanning">
-                                Weekplanning
-                            </a>
-                        </li>
-                    </ul>
+                        <ul>
+                            <li>
+                                <a href="?page=index">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="?page=taken">
+                                    Taken
+                                </a>
+                            </li>
+                            <li>
+                                <a href="?page=weekplanning">
+                                    Weekplanning
+                                </a>
+                            </li>
+                        </ul>
 
-                </nav>
+                    </nav>
 
-            </div>
+                </div>
